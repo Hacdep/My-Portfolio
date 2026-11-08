@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import photo from "./assets/photo.jpg";
+import kebabika1 from "../photos/image.png";
+import worldclock from "../photos/image2.png";
+import sushi from "../photos/image3.png";
 
 /* ✏️ O'zingiznikini shu yerga yozing */
 const ME = {
@@ -14,7 +17,7 @@ const T = {
  uz:{ nav:["Loyihalar","Jarayon","Men haqimda","Resume","Aloqa"], loc:"Toshkent, O'zbekiston", avail:"Ishga tayyor",
   sub:"Foydali, qulay va esda qoladigan veb-tajribalar yarataman.", seeP:"Loyihalarni ko'rish", dl:"Resume yuklab olish",
   proj:"Tanlangan loyihalar", soon:"Loyiha rasmi",
-  P:[["SPOTIFY CLONE","Component-based va responsive musiqa ilovasi interfeysi: Header, Layout va boshqa murakkab komponentlar, qulay UX.",["React","CSS Modules"]],["3D WEB CONCEPT","Three.js bilan 3D vizual elementlar va brauzer interaktivligi; Node.js va RESTful API orqali ma'lumot almashinuvi.",["Three.js","Node.js"]],["PORTFOLIO SAYTI","Shaxsiy sayt: 3 tilli, resume yuklab olish bilan.",["React","CSS3"]]],
+  P:[["KEBABIKA","Toshkentdagi restoran uchun to'liq funksional veb-sayt: onlayn buyurtma, menyu, aksiyalar va stol bron qilish tizimi.",["React","JavaScript","CSS3","Responsive Design"],[kebabika1],"https://kebabikarestaurant.vercel.app/?lang=uz"],["WORLD LIVE HOURS","Dunyoning 365+ shahri va 175+ mamlakatida jonli vaqtni ko'rsatuvchi veb-ilova. Real vaqtda yangilanadi, qidiruv va mintaqalar bo'yicha filtrlash imkoniyati bilan.",["React","JavaScript","Date API","CSS3","Responsive Design"],[worldclock],null],["SUSHI MARKET","Onlayn sushi yetkazib berish sayti: menyu ko'rish, narxlar, aksiyalar va buyurtma berish imkoniyati bilan.",["React","JavaScript","CSS3","Responsive Design"],[sushi],"https://sushi-online-market.netlify.app/"]],
   proc:"Ish jarayonim", S:[["Tahlil","Talab va maqsadni aniqlash."],["Reja","Struktura va maket."],["Kod","Toza HTML, CSS, React."],["Responsive","Telefon, planshet, kompyuter."],["Test va deploy","Tekshiruv va GitHub'ga joylash."]],
   tools:"Asboblarim", T:["Interfeys kutubxonasi","Dasturlash tili","Markup","Stil va layout","Versiyalar nazorati","Kod hosting"],
   about:"Men haqimda", ab:"Frontend va zamonaviy web-texnologiyalar (JavaScript, React) bo'yicha amaliy tajribaga ega 3-kurs Kompyuter muhandisligi talabasi. ProWeb o'quv markazining Frontend Development kursini tamomlaganman. Responsive, tezkor va qulay interfeyslar yarataman hamda RESTful API integratsiyalarini qilaman. Hozir Tailwind CSS va Three.js bilan interaktiv dizayn ko'nikmalarimni chuqurlashtiryapman.",
@@ -24,7 +27,7 @@ const T = {
  en:{ nav:["Projects","Process","About","Resume","Contact"], loc:"Tashkent, Uzbekistan", avail:"Open to work",
   sub:"I build useful, usable and memorable web experiences.", seeP:"View projects", dl:"Download resume",
   proj:"Featured projects", soon:"Project image",
-  P:[["SPOTIFY CLONE","Component-based, responsive music app UI: Header, Layout and other complex components with a focus on UX.",["React","CSS Modules"]],["3D WEB CONCEPT","3D visuals and browser interactivity with Three.js; data exchange with backend services via Node.js and RESTful API.",["Three.js","Node.js"]],["PORTFOLIO SITE","Personal site: 3 languages, with resume download.",["React","CSS3"]]],
+  P:[["KEBABIKA","Fully functional restaurant website for a Tashkent-based kebab restaurant: online ordering, menu, promotions and table reservation system.",["React","JavaScript","CSS3","Responsive Design"],[kebabika1],"https://kebabikarestaurant.vercel.app/?lang=uz"],["WORLD LIVE HOURS","A live world clock app showing real-time for 365+ cities across 175+ countries, with search and region-based filtering.",["React","JavaScript","Date API","CSS3","Responsive Design"],[worldclock],null],["SUSHI MARKET","Online sushi delivery website: browse the menu, view prices, check promotions and place orders.",["React","JavaScript","CSS3","Responsive Design"],[sushi],"https://sushi-online-market.netlify.app/"]],
   proc:"My workflow", S:[["Discover","Understand needs and goals."],["Plan","Structure and layout."],["Code","Clean HTML, CSS, React."],["Responsive","Phone, tablet, desktop."],["Test & deploy","Check and publish via GitHub."]],
   tools:"Tools I use", T:["UI library","Programming language","Markup","Styling & layout","Version control","Code hosting"],
   about:"About me", ab:"3rd-year Computer Engineering student with hands-on experience in frontend and modern web technologies (JavaScript, React). Graduate of ProWeb Learning Center's Frontend Development course. I build responsive, fast and user-friendly interfaces and integrate RESTful APIs. Currently deepening interactive design skills with Tailwind CSS and Three.js.",
@@ -34,7 +37,7 @@ const T = {
  ru:{ nav:["Проекты","Процесс","Обо мне","Резюме","Контакты"], loc:"Ташкент, Узбекистан", avail:"Открыт к работе",
   sub:"Создаю полезные, удобные и запоминающиеся веб-решения.", seeP:"Смотреть проекты", dl:"Скачать резюме",
   proj:"Избранные проекты", soon:"Изображение проекта",
-  P:[["SPOTIFY CLONE","Компонентный адаптивный интерфейс музыкального приложения: Header, Layout и другие сложные компоненты, упор на UX.",["React","CSS Modules"]],["3D WEB CONCEPT","3D-элементы и интерактивность в браузере на Three.js; обмен данными с бэкендом через Node.js и RESTful API.",["Three.js","Node.js"]],["САЙТ-ПОРТФОЛИО","Личный сайт на 3 языках со скачиванием резюме.",["React","CSS3"]]],
+  P:[["KEBABIKA","Полнофункциональный сайт для ташкентского ресторана: онлайн-заказ, меню, акции и система бронирования столиков.",["React","JavaScript","CSS3","Responsive Design"],[kebabika1],"https://kebabikarestaurant.vercel.app/?lang=uz"],["WORLD LIVE HOURS","Веб-приложение с живыми часами для 365+ городов и 175+ стран мира. Обновляется в реальном времени, с поиском и фильтрацией по регионам.",["React","JavaScript","Date API","CSS3","Responsive Design"],[worldclock],null],["SUSHI MARKET","Онлайн-сайт доставки суши: просмотр меню, цены, акции и оформление заказа.",["React","JavaScript","CSS3","Responsive Design"],[sushi],"https://sushi-online-market.netlify.app/"]],
   proc:"Мой процесс", S:[["Анализ","Понять задачи и цели."],["План","Структура и макет."],["Код","Чистый HTML, CSS, React."],["Адаптивность","Телефон, планшет, ПК."],["Тест и деплой","Проверка и публикация на GitHub."]],
   tools:"Мои инструменты", T:["UI-библиотека","Язык программирования","Разметка","Стили и вёрстка","Контроль версий","Хостинг кода"],
   about:"Обо мне", ab:"Студент 3-го курса «Компьютерная инженерия» с практическим опытом во frontend и современных веб-технологиях (JavaScript, React). Выпускник курса Frontend Development учебного центра ProWeb. Создаю адаптивные, быстрые и удобные интерфейсы, интегрирую RESTful API. Сейчас углубляю навыки интерактивного дизайна с Tailwind CSS и Three.js.",
@@ -83,9 +86,12 @@ function App(){
     <div className="g3">{t.P.map((p,i)=>(
       <div className="c" key={i}>
         <div className="num d">0{i+1}</div>
-        <div className="ph2">{t.soon}</div>
+        <div className="ph2">{p[3] ? <img src={p[3][0]} alt={p[0]} style={{width:"100%",height:"100%",objectFit:"cover",borderRadius:8}}/> : t.soon}</div>
         <h3>{p[0]}</h3><p style={{marginBottom:12}}>{p[1]}</p>
-        <div className="ch">{p[2].map(x=><span key={x}>{x}</span>)}</div>
+        <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",flexWrap:"wrap",gap:8}}>
+          <div className="ch">{p[2].map(x=><span key={x}>{x}</span>)}</div>
+          {p[4] && <a href={p[4]} target="_blank" rel="noopener" className="btn" style={{fontSize:"0.78rem",padding:"5px 14px"}}>Ko'rish ↗</a>}
+        </div>
       </div>))}
     </div>
   </div></section>
